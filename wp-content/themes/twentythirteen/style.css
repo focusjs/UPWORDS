@@ -816,12 +816,9 @@ img.wp-smiley,
 }
 
 .site-header .home-link {
-	color: #141412;
 	display: block;
 	margin: 0 auto;
 	max-width: 1080px;
-	min-height: 230px;
-	padding: 0 20px;
 	text-decoration: none;
 	width: 100%;
 }

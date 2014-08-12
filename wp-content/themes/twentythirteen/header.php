@@ -29,23 +29,21 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 </head>
+<?php
+
+$pageid = basename(get_permalink());
+$GLOBALS["pageid"] = $pageid;
+$site_name = get_site_url();
+if(is_search() || strcmp($pageid, "") == 0 || strrpos($site_name, $pageid) > 0) {
+	$GLOBALS["pageid"]="home";
+}
+   echo $GLOBALS["pageid"] . " ". $site_name;     
+?>
+
+
 
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
-			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</a>
-
-			<div id="navbar" class="navbar">
-				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
-					<h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
-					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-					<?php get_search_form(); ?>
-				</nav><!-- #site-navigation -->
-			</div><!-- #navbar -->
-		</header><!-- #masthead -->
+		<?php get_banner(); ?>
 
 		<div id="main" class="site-main">
