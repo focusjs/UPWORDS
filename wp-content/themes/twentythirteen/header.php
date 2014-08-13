@@ -29,21 +29,9 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 </head>
-<?php
-
-$pageid = basename(get_permalink());
-$GLOBALS["pageid"] = $pageid;
-$site_name = get_site_url();
-if(is_search() || strcmp($pageid, "") == 0 || strrpos($site_name, $pageid) > 0) {
-	$GLOBALS["pageid"]="home";
-}
-   echo $GLOBALS["pageid"] . " ". $site_name;     
-?>
-
-
 
 <body <?php body_class(); ?>>
-	<div id="page" class="hfeed site">
+	<div id="page" class="hfeed site page-body">
 		<?php get_banner(); ?>
-
+		
 		<div id="main" class="site-main">

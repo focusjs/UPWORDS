@@ -639,6 +639,18 @@ function get_sub_categories_by_slug($page_slug) {
 }
 
 
+function get_text_banner($pageid = 'home') {
+	$text_html = "";$text="";$img=""; 
+	if($pageid == 'home') {
+		$text = "\"This quote will convey the emotional<br/>value that these cards have brought to<br/>someone's life and how the message was<br/>so incredible and meaningful.\"<br/><span>Sonya Edison / Northridge, WI</span>";
+		$img = get_template_directory_uri() . "/images/Mom_Girl.jpg";
+	}
+	
+	$text_html .= '<div class="text-logo left">'.$text . '</div>';
+	$text_html .= '<div class="img-logo left"><img src="'.$img . '" width="284px" height="153px"/></div>';
+	//
+  echo $text_html ;
+}
 
 
 

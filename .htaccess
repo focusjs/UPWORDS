@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /UPWORDS/
+RewriteBase /upwork/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /UPWORDS/index.php [L]
+RewriteRule . /upwork/index.php [L]
 </IfModule>
 
 # END WordPress
