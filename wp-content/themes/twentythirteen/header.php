@@ -28,9 +28,16 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+	
+	<script src="<?php echo get_template_directory_uri(); ?>/js/upwords-base.js"></script>
+	
 </head>
+<?php 
+$main_banner = is_main_banner();
+$bodyId = ($main_banner  === true) ? 'main-body' : 'sub-body';
 
-<body <?php body_class(); ?>>
+?>
+<body id="<?php echo $bodyId; ?>" <?php body_class(); ?>>
 	<div id="page" class="hfeed site page-body">
 		<?php get_banner(); ?>
 		

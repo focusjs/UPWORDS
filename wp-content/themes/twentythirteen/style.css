@@ -55,6 +55,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *
  * @see http://git.io/normalize
  * ----------------------------------------------------------------------------
+ * 	display: block; width: 113px;
+	height: 40px; margin: auto; padding: 5px;
  */
 
 * {
@@ -784,6 +786,63 @@ img.wp-smiley,
 }
 
 .clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;line-height:0;content:""}.clearfix:after{clear:both}
+
+
+.album-container {
+  width: 685px; position: relative;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  min-height: 567px;
+  margin: 0px;
+}
+
+.slider-container .item-slider {
+  display: none;
+  float: left;
+  position: absolute;
+  top: 0px; left: 0px;
+  width: auto;
+  height: auto;
+  min-height: 567px;
+}
+
+.slider-container .active-item {
+  display: block;
+  width: 685px;
+}
+
+.slider-container ul, li {
+  list-style-type: none;
+}
+
+.album-container a.browse {
+  position: absolute; z-index: 1000;
+  top: 265px; width: 28px; height: 28px;
+  background: url('images/arrows.png');
+  text-indent: -9999px; 
+}
+
+.album-container a.previous:hover {
+  background-position: 0px 0px;
+}
+
+.album-container a.next:hover {
+	background-position: 29px 111px;
+}
+
+
+.album-container a.previous {
+	background-position: 0px -30px;
+  left: 50px;
+}
+.album-container a.next {
+	background-position: 29px 81px;
+  right: 50px;
+}
+
 /**
  * 3.0 Basic Structure
  * ----------------------------------------------------------------------------
@@ -792,7 +851,16 @@ img.wp-smiley,
 .site {
 	background-color: #fff;
 	margin: 0 auto;
+}
+
+#main-body .site {
 	width: 987px;
+}
+
+#sub-body .site {
+	width: 1080px;
+	background: #fff url('images/sub_bg_page.png') top left repeat-y;
+	min-height: 600px;
 }
 
 .main-banner {
@@ -841,8 +909,9 @@ img.wp-smiley,
 	height: 153px;
 	width: 360px;
 	display:inline-block;
-	background: url('images/main_logo.png') top left no-repeat ;
+	background: url('images/main_logo.png') 40px 30px no-repeat;
 }
+
 .main-banner .banner .right-logo {
 	margin-top:-1px;
 }
@@ -879,7 +948,7 @@ img.wp-smiley,
 }
 
 
-.main-banner ul.menu-item .shop {
+.main-banner ul.menu-item .home {
 	width: 160px;
 }
 .main-banner ul.menu-item .life {
@@ -904,11 +973,82 @@ img.wp-smiley,
 	background: #dbdcd6;
 }
 
+.sub-banner .sub-logo .logo-image {
+	height: 95px;
+	width: 368px;
+	display:inline-block;
+	background: url('images/sub_logo.png') 114px 12px no-repeat ;
+}
+
+
+.sub-banner .menu-item {
+	line-height: 28px;
+	font-weight:bold;
+	padding: 10px 0px 0px 50px;
+}
+
+.sub-banner .menu-item .grop-item {
+	width: 185px;
+}
+
+.sub-banner .menu-item .line-item {
+	width: 80px;
+	border-bottom: 1px solid #b8b9b9;
+}
+
+.sub-banner .menu-item a {
+	color: #000;
+}
+.sub-banner .menu-item .select a {
+	color: #069fc5;
+}
+.sub-banner .menu-item a:hover {
+	color: #069fc5;text-decoration:none;
+}
 
 
 
 
 
+.home-container {
+
+}
+.home-container .left-container {
+  width: 300px;
+  background: #fff url('images/top_left_home.png') top left no-repeat;
+  padding: 30px 10px 10px 10px;
+}
+
+.home-container .left-container p {
+	padding: 8px 0px; margin: 0px;
+}
+
+.home-container .left-container .top-text {
+	padding: 5px 30px;text-align:justify;
+}
+
+.home-container .left-container .read-more {
+	margin-top: -30px; margin-right: 10px;
+	font-weight:bold;
+	color: #069fc5; text-decoration: underline;
+}
+
+.home-container .left-container .card-img {
+	padding: 5px 0px 0px 10px;
+}
+
+.home-container .left-container .card-img p {
+	padding: 5px 10px;
+}
+.home-container .left-container .shop-card p {
+	padding: 5px 20px;
+}
+
+.home-container .left-container .shop-now {
+	display: block; width: 113px;
+	height: 40px; margin: auto;
+	background: #fff url('images/shop_now.png') top left no-repeat;
+}
 
 
 /* duy tu*/

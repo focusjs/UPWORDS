@@ -9,11 +9,9 @@
 	if(is_search() || strcmp($pageid, "") == 0 || strrpos($site_name, $pageid) > 0) {
 		$GLOBALS["pageid"]="home";
 	}
-
+	
 	// shop  life about causes blog contact	
 	get_header();
-	
-	echo $pageid;
 	
 	//
   if($pageid === 'home') {

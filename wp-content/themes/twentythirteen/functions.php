@@ -546,10 +546,25 @@ function main_template() {
 }
 add_action('template_redirect', 'main_template');
 
+function get_upall_pages() {
+	$pages = array();
+	$pages['home'] = 'Shop'; $pages['life'] = 'Life Stories';
+	$pages['about'] = 'About'; $pages['causes'] = 'Causes';
+	$pages['blog'] = 'Blog'; $pages['contact'] = 'Contact';
+	return $pages;
+}
+
+function is_main_banner() {
+	$pageid = $GLOBALS["pageid"];
+	if($pageid === 'home' || $pageid === 'contact' || $pageid === 'shop' || $pageid === 'causes') {
+		return true;
+	}
+	return false;
+}
+
 
 function get_banner() {
-	$pageid = $GLOBALS["pageid"];
-	if($pageid === 'home' || $pageid === 'contact' || $pageid === 'shop') {
+	if(is_main_banner()) {
 		get_main_banner();
 	} else {
 		get_sub_banner();

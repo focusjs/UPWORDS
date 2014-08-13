@@ -16,7 +16,9 @@
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
-
+	<script type="text/javascript">
+		if(window.sliderInit) {window.sliderInit()};
+	</script>
 	<?php wp_footer(); ?>
 </body>
 </html>

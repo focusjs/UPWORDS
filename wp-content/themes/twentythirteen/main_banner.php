@@ -22,12 +22,17 @@
 			
 		 <div id="main-menu">
 				<ul class="menu-item clear">
-					<li class="shop select"><a href="<?php echo esc_url( home_url( '/' ) ); ?>shop"> Shop </a></li>
-					<li class="life"><a href="<?php echo esc_url( home_url( '/' ) ); ?>life"> Life Stories </a></li>
-					<li class="about"><a href="<?php echo esc_url( home_url( '/' ) ); ?>about"> About </a></li>
-					<li class="causes"><a href="<?php echo esc_url( home_url( '/' ) ); ?>causes"> Causes </a></li>
-					<li class="blog"><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog"> Blog </a></li>
-					<li class="contact"><a href="<?php echo esc_url( home_url( '/' ) ); ?>contact"> Contact </a></li>
+					<?php
+						$pages = get_upall_pages();
+					  foreach ($pages as $key => $value) {
+							$clazz = $key;
+							if($key === $GLOBALS["pageid"]) {
+								$clazz .= " select";
+							}
+							if($key === 'home') {$key = '';}
+							echo '<li class="'.$clazz.'"><a href="' . esc_url( home_url( '/' ) ) . $key . '">' . $value . '</a></li>';
+						}
+					?>
 				</ul>
 		 </div>
 		 <div class="line-main"><span></span></div>
