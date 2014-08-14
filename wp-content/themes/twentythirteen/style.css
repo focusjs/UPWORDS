@@ -1050,6 +1050,108 @@ img.wp-smiley,
 	background: #fff url('images/shop_now.png') top left no-repeat;
 }
 
+.footer-home {
+	background: #fff url('images/footer_bg_page.png') 0px 0px repeat-y;
+}
+
+.footer-home .gray-dot {
+	width: 100%;
+	min-height: 525px;
+	background: url('images/gray_dot.png') 370px 5px no-repeat;
+}
+
+.footer-home .footer-left {
+	width: 657px; min-height: 500px;
+}
+
+.footer-home .footer-left .the_box {
+	width: 300px; margin: 15px 18px 25px 0px;
+	background: #fff;
+	padding-bottom: 10px;
+}
+.footer-home .footer-left .the_box .read-more {
+	padding-left: 15px;
+}
+
+.footer-home .footer-left .the_box .content {
+	padding: 10px 15px 0px 15px;
+	line-height:30px;
+}
+.footer-home .footer-left .the_box .title {
+	font-weight: bold;
+}
+
+.footer-home .footer-left .the_nabar_footer {
+	width: 657px;
+	height: 72px; padding: 0px 0px 0px 20px;
+	background: #4892d9;
+}
+
+.footer-home .footer-left .the_nabar_footer .menu-item {
+	padding: 0px;margin:0px;
+}
+
+.footer-home .footer-left .the_nabar_footer .menu-item li {
+	line-height: 24px;
+	padding: 0px 15px;
+	font-weight:bold;
+}
+
+.footer-home .footer-left .the_nabar_footer .menu-item li.border {
+	border-right: 1px solid #fff;
+	margin-top: 22px;
+}
+
+.footer-home .footer-left .the_nabar_footer .menu-item li.contact {
+	margin-top: 22px;
+}
+
+.footer-home .footer-left .the_nabar_footer .menu-item li.subscribe {
+	color: #fff;
+	line-height: 18px;
+	height: 72px;
+	padding: 12px;
+	background: #f26722;
+	min-width: 155px;
+}
+
+.footer-home .footer-left .the_nabar_footer .subscribe a {
+	text-decoration: underline;
+}
+
+.footer-home .footer-left .the_nabar_footer a {
+	color: #fff;
+}
+
+
+.footer-home .footer-right {
+	width: 328px;
+}
+
+.footer-home .footer-right p {
+	padding: 36px 0px 0px 26px;
+	font-size: 22px; line-height: 26px;
+}
+
+.footer-home .footer-right .text {
+	color: #595a58;
+}
+
+.footer-home .footer-right .footer-logo {
+	width: 300px; height: 300px;
+	margin: 10px 0px 0px 30px;
+	background: url('images/up_logo_footer.png') center no-repeat;
+}
+
+.footer-home .social-network {
+	margin-left: 25px;
+	background: url('images/social_icon.png') top left no-repeat;
+}
+
+.footer-home .social-network a {
+	display: inline-block;
+	width: 42px; height: 42px;
+}
 
 /* duy tu*/
 

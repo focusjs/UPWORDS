@@ -48,6 +48,7 @@
 				<?php
 					 $index = $index + 1;
 				}
+				wp_reset_postdata();
 				?>
 			</ul>
 			<a class="browse previous" data-index="previous" href="#" title="Previous">Previous</a>
@@ -63,3 +64,67 @@
 	
 	</div>
 </div>
+
+<div class="footer-home">
+	<div class="gray-dot clear">
+		<div class="footer-left left">
+			<div class="box_container clear">
+				<div class="the_box left">
+				<?php 
+					$page_id = 14; 
+					$page_data = get_page( $page_id ); 
+				?>
+					<div class="page_content">
+						<?php echo apply_filters('the_content', $page_data->post_content); ?>
+					</div>
+					<a class="read-more" href="<?php echo get_page_link($page_id); ?>">Read more...</a>
+				</div>
+				<div class="the_box left">
+				<?php 
+					$page_id = 16; 
+					$page_data = get_page( $page_id ); 
+				?>
+					<div class="page_content">
+						<?php echo apply_filters('the_content', $page_data->post_content); ?>
+					</div>
+					<a class="read-more" href="<?php echo get_page_link($page_id); ?>">Read more...</a>
+				</div>
+			</div>
+			<div class="the_nabar_footer">
+				<ul class="menu-item clear">
+					<?php
+						$pages = get_upall_pages(); $subscribe = "";
+					  foreach ($pages as $key => $value) {
+							$clazz = $key;
+							if($key === $GLOBALS["pageid"]) {
+								$clazz .= " select";
+							}
+							if($key !== 'contact') {
+								$clazz .= " border";
+							} else {
+								$subscribe = '<li class="subscribe right">UP Newsletter<br/><a href="#">Subscribe here...</a></li>';
+							}
+							
+							if($key === 'home') {$key = '';}
+							echo '<li class="'.$clazz.' left"><a href="' . esc_url( home_url( '/' ) ) . $key . '">' . $value . '</a></li>'.$subscribe;
+							
+						}
+					?>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-right left">
+			<div class="footer-logo"></div>
+			<p><span class="text">A short message here would <br/>be a way  to emphasis:</span>
+				 <br/><span><strong>Tell stories that matter.</strong></span>
+			</p>
+			<div class="social-network">
+				<a class="twitter" href="#"></a>
+				<a class="facebook" href="#"></a>
+				<a class="youtube" href="#"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+

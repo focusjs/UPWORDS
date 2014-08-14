@@ -21,7 +21,7 @@
       },
       resetHeight: function() {
         effect.currentBlock.css('width', effect.container.outerWidth());
-        effect.container.css('height', effect.currentBlock.outerHeight());
+        effect.container.css('height', (effect.currentBlock.outerHeight() - 1));
       },
       effectApply : function(type, contentId, callback) {
         var page = $('#'+contentId);
