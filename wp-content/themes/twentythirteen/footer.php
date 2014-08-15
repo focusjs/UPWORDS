@@ -11,7 +11,7 @@
 ?>
 
 		</div><!-- #main -->
-		<footer id="colophon" class="site-footer" role="contentinfo">
+		<footer id="colophon" class="site-footer" role="contentinfo" style="display:none">
 			<div class="site-info">
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
