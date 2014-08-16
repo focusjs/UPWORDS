@@ -919,6 +919,7 @@ img.wp-smiley,
 .main-banner .banner .text-logo {
 	padding: 10px 30px 0px 0px;
 	text-align: right;
+	font-family: AGaramondProRegular;
 }
 .main-banner .banner .text-logo span{
 	color: #797675;
@@ -939,6 +940,7 @@ img.wp-smiley,
 
 .main-banner ul.menu-item li a {
 	color: #000;display: block;line-height:34px;
+	font-family: 'Arial W10 Narrow'; font-size: 17px;
 }
 .main-banner ul.menu-item li.select a {
 	color: #fff;background: #069fc5;
@@ -997,7 +999,9 @@ img.wp-smiley,
 }
 
 .sub-banner .menu-item a {
+	font-family: 'Arial W10 Narrow';
 	color: #000;
+	font-size: 16px;
 }
 .sub-banner .menu-item .select a {
 	color: #069fc5;
@@ -1017,6 +1021,8 @@ img.wp-smiley,
   width: 300px;
   background: #fff url('images/top_left_home.png') top left no-repeat;
   padding: 30px 10px 10px 10px;
+	font-family: 'Arial W01 Narrow';
+	font-size: 18px;
 }
 
 .home-container .left-container p {
@@ -1024,7 +1030,7 @@ img.wp-smiley,
 }
 
 .home-container .left-container .top-text {
-	padding: 5px 30px;text-align:justify;
+	padding: 5px 30px;text-align:justify;	font-size: 19px;
 }
 
 .home-container .left-container .read-more {
@@ -1056,18 +1062,19 @@ img.wp-smiley,
 
 .footer-home .gray-dot {
 	width: 100%;
-	min-height: 525px;
+	min-height: 555px;
 	background: url('images/gray_dot.png') 370px 5px no-repeat;
 }
 
 .footer-home .footer-left {
-	width: 657px; min-height: 500px;
+	width: 657px;
 }
 
 .footer-home .footer-left .the_box {
 	width: 300px; margin: 15px 18px 25px 0px;
 	background: #fff;
-	padding-bottom: 10px;
+	padding-bottom: 10px;font-weight: bold;
+	font-family: AGaramondProRegular;
 }
 .footer-home .footer-left .the_box .read-more {
 	padding-left: 15px;
@@ -1083,23 +1090,33 @@ img.wp-smiley,
 
 .footer-home .footer-left .the_nabar_footer {
 	width: 657px;
+}
+
+.the_nabar_footer {
 	height: 72px; padding: 0px 0px 0px 20px;
 	background: #4892d9;
 }
 
-.footer-home .footer-left .the_nabar_footer .menu-item {
+.the_nabar_footer .menu-item {
 	padding: 0px;margin:0px;
 }
 
-.footer-home .footer-left .the_nabar_footer .menu-item li {
+.the_nabar_footer .menu-item li {
 	line-height: 24px;
-	padding: 0px 15px;
+	padding: 0px 18px;
 	font-weight:bold;
 }
 
-.footer-home .footer-left .the_nabar_footer .menu-item li.border {
-	border-right: 1px solid #fff;
+.the_nabar_footer .menu-item li.border {
+	border-right: 2px solid #fff;
+}
+
+.the_nabar_footer .menu-item li.left {
 	margin-top: 22px;
+}
+
+.the_nabar_footer a {
+	color: #fff;
 }
 
 .footer-home .footer-left .the_nabar_footer .menu-item li.contact {
@@ -1112,29 +1129,29 @@ img.wp-smiley,
 	height: 72px;
 	padding: 12px;
 	background: #f26722;
-	min-width: 155px;
+	min-width: 165px;
 }
 
 .footer-home .footer-left .the_nabar_footer .subscribe a {
-	text-decoration: underline;
+	border-bottom: 1px solid #fff;
 }
-
-.footer-home .footer-left .the_nabar_footer a {
-	color: #fff;
-}
-
 
 .footer-home .footer-right {
 	width: 328px;
 }
 
 .footer-home .footer-right p {
-	padding: 36px 0px 0px 26px;
-	font-size: 22px; line-height: 26px;
+	padding: 36px 0px 0px 26px; margin-bottom:10px;
+	font-family: AGaramondProRegular;
 }
 
+.footer-home .footer-right p strong {
+	font-size: 28px; line-height: 48px;
+}
+
+
 .footer-home .footer-right .text {
-	color: #595a58;
+	color: #595a58;font-size: 26px;line-height: 26px;
 }
 
 .footer-home .footer-right .footer-logo {
@@ -1145,13 +1162,85 @@ img.wp-smiley,
 
 .footer-home .social-network {
 	margin-left: 25px;
-	background: url('images/social_icon.png') top left no-repeat;
 }
 
-.footer-home .social-network a {
+.social-network a {
 	display: inline-block;
 	width: 42px; height: 42px;
 }
+
+.social-network {
+	width: 130px;height:44px;
+	background: url('images/social_icon.png') top left no-repeat;
+}
+
+
+.about-page {
+	background: url('images/gray_dot_about.png') 20px 170px no-repeat;
+}
+
+.about-page .image-top {
+	width: 830px; height: 328px;
+	margin: auto;
+	background: url('images/top_left_home.png') bottom repeat-x;
+}
+.about-page .image-top img {
+	padding: 0px; margin: 0px -3px 0px 0px;
+}
+
+
+.about-page .image-container {
+	width: 368px;
+	height: 600px;
+}
+.about-page .image-container .img-about {
+	text-align: right;
+	padding: 180px 15px 0px 0px;
+}
+.about-page .image-container .img-about img {
+	padding: 7.5px 0px;
+}
+
+.about-page .image-container .shop {
+	text-align: right;
+	padding: 90px 15px 0px 0px;
+}
+.about-page .image-container .shop .shop-now {
+	display:block;
+	height: 45px; width: 120px;
+	background: url('images/shop_now.png') top left no-repeat;
+	margin: 25px 0px 0px 164px;
+}
+
+.about-page .about-content {
+	width: 615px;
+	padding: 35px 0px 0px 70px;
+	font-size: 17px;
+}
+
+.about-page .about-content .the-excerpt {
+}
+.about-page .about-content .the-title {
+	font-weight: bold;
+	font-size: 34px;
+	color: #089fa0;
+}
+.about-page .about-content .the-content {
+	font-family: 'AGaramondProRegular';
+	width: 475px;font-size: 19px;
+}
+
+.about-page .social {
+	margin: 70px 0px 20px 0px;
+	padding-right: 10px;
+}
+
+.about-page .the_nabar_footer {
+	margin: 0px 0px 50px -69px;
+	padding-right: 10px;
+}
+
+
 
 /* duy tu*/
 
