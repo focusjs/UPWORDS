@@ -28,10 +28,12 @@
 		get_blog_page();
 	} else if($pageid === 'contact') {
 		get_contact_page();
+	} else if($pageid === 'product') {
+		get_product_page();
 	} else {
 		echo "<b> Page Not Found !</b>";
 	}
-	//
+	// 
 	get_footer();
 
 ?>
