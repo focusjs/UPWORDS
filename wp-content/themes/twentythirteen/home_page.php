@@ -6,7 +6,7 @@
 	<div class="left-container left">
 		<div class="top-text clear">
 			<p><strong>All Occassion Mini Cards</strong></p>
-			<p class="excerpt">Our greeting card selection is a celebration of life in the fun written form and goes on a bit more to say... </p>
+			<p class="excerpt" id="post-excerpt">Our greeting card selection is a celebration of life in the fun written form and goes on a bit more to say... </p>
 			<a href="#" class="read-more right">More ></a>
 		</div>
 		<div class="card-img">
@@ -46,6 +46,7 @@
 					<div id="info-hidden-<?php echo $idActive;?>" 
 					    data-link="<?php echo get_permalink();?>"
 							data-img="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $the_ID ), 'large' )[0];?>" class="info-hidden" style="display:none"></div>
+					<div id="content-hidden-<?php echo $idActive;?>" style="display:none"></div>
 				</li>
 				<?php
 					 $index = $index + 1;
@@ -60,6 +61,7 @@
 				var info = jQuery('#info-hidden-<?php echo $idActive;?>');
 				jQuery('#post-img').attr('src', info.attr('data-img'));
 				jQuery('#shop-now-button').attr('href', info.attr('data-link'));
+				jQuery('#post-excerptn').text(jQuery('#content-hidden-<?php echo $idActive;?>').text());
 			</script>
 			
 		</div>

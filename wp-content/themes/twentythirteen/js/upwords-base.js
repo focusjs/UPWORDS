@@ -150,22 +150,51 @@
   };
 
 
+	function lifeOver() {
+		var parent = $('#life-page');
+		if(parent.length > 0) {
+			var postContainer = parent.find('.post-container:first');
+			var posts = postContainer.find('.post');
+			posts.on('mouseover', function(evt) {
+				var post = $(this);
+				var htext = post.find('.hidden-text:first');
+				if(htext.length > 0) {
+					var index = post.attr('data-index') * 1;
+					if(index === 2 || index === 5 || index === 8) {
+						htext.css('right', '0px').css('left', '');
+					} else {
+						htext.css('right', '').css('left', '0px');
+					}
+					htext.show();
+				}
+			}).on('mouseout', function(evt) { $(this).find('.hidden-text:first').hide();});
+		}
+	} 
+
+
   function init(){
-    if(window.slider !== 'start') {
-			window.slider = 'start';
+    if(window.isInit !== 'start') {
+			window.isInit = 'start';
 			window.EffectContent = new effectContent();
 			
 			EffectContent.init('slider-container');
 			PostSlider.init('slider-container', true);
+			//
+			lifeOver();
     }
   }
 
 window.sliderInit = init;
 //
 var t = window.setTimeout(function() {
-init();
-window.clearTimeout(t);
+	init();
+	window.clearTimeout(t);
 }, 1000);
+
+
+
+
+
 
 
 })(jQuery, window);

@@ -1292,8 +1292,109 @@ img.wp-smiley,
 }
 
 
+.life-page {
 
+}
+.life-page .the_world {
+	background: url('images/World_Life_Stories.png') top center no-repeat;
+	width: 1080px;height: 482px;
+	position: relative;
+}
 
+.life-page .the_world .note {
+	position: absolute;
+	width: 110px; height: 50px;
+	text-align: center;
+	padding: 0px; margin:0px;
+	font-weight:bold;
+}
+
+.the_world .note .text {
+	font-size: 12px;
+	line-height: 14px;
+	padding: 0px 4px;
+}
+
+.the_world .note .text2 {
+	font-size: 9px;
+	line-height: 13px;
+	white-space: nowrap;
+}
+
+.the_world .note1 {
+	top: 114px; left: 145px;
+}
+.the_world .note2 {
+	top: 138px; left: 527px;
+}
+.the_world .note3 {
+	top: 133px; right: 183px;
+}
+.the_world .note4 {
+	top: 163px; left: 275px;
+}
+.the_world .note5 {
+	top: 232px; right: 376px;
+}
+.the_world .note6 {
+	bottom: 128px; left: 239px;
+}
+.the_world .note7 {
+	bottom: 69px; right: 64px;
+}
+
+.life-page .life-left {
+	width: 368px;
+	min-height: 600px;
+}
+.life-page .life-content {
+	width: 700px;
+	min-height: 600px;
+	margin-top: -50px;
+	padding: 0px 0px 30px 0px;
+}
+
+.life-page .life-content .the-title {
+	padding: 0px 20px;
+	margin: 0px;
+	font-size: 30px;
+	color: #4d8ec7;
+}
+
+.life-page .life-content .the-excerpt {
+	padding: 20px;
+}
+
+.life-page .life-content .post-container {
+	width: 650px;padding-left:1px;
+	
+}
+.life-page .post {
+	width: 215px; height: 215px;
+	cursor: pointer;
+	position: relative;
+}
+.life-page .hidden-text {
+	position: absolute; z-index: 1000;
+	top: 0px; display: none;
+	width: 430px;height: 215px;
+	padding: 10px;
+	background-color: #ffffff;
+  opacity: 0.7;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+.life-page .hidden-text .title-text {
+	color: #d66e41;
+}
+
+.life-page .text {
+	color: #d66e41;
+	padding: 20px;
+	font-size: 14px;
+}
+.life-page .text p {
+	padding: 0px;margin: 0px;
+}
 
 
 /* duy tu*/
