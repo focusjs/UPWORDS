@@ -969,7 +969,7 @@ img.wp-smiley,
 	float: none;border-right: none;
 }
 
-.main-banner .line-main {
+.line-main {
 	width: 656.5px;
 	height: 35px;
 	background: #dbdcd6;
@@ -1123,7 +1123,7 @@ img.wp-smiley,
 	margin-top: 22px;
 }
 
-.footer-home .footer-left .the_nabar_footer .menu-item li.subscribe {
+.the_nabar_footer .menu-item li.subscribe {
 	color: #fff;
 	line-height: 18px;
 	height: 72px;
@@ -1132,7 +1132,7 @@ img.wp-smiley,
 	min-width: 165px;
 }
 
-.footer-home .footer-left .the_nabar_footer .subscribe a {
+.the_nabar_footer .subscribe a {
 	border-bottom: 1px solid #fff;
 }
 
@@ -1395,6 +1395,46 @@ img.wp-smiley,
 .life-page .text p {
 	padding: 0px;margin: 0px;
 }
+
+
+.causes-page {
+	padding-left: 50px;
+	background: #fff url('images/top_left_home.png') top left repeat-x;
+}
+.causes-page .page-title{
+	font-weight:bold;
+	color: #f26722;
+	font-style: normal;
+}
+
+.causes-page .post-info {
+	width: 695px;
+}
+.causes-page .post-image {
+	width: 230px;
+}
+.causes-page .title-text {
+	color: #4d8ec7;
+	font-size: 22px;
+}
+.causes-page .post-line {
+	background: url('images/post_line.png') center repeat-x;
+	height: 50px;
+	width: 100%;
+	line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* duy tu*/
