@@ -1240,6 +1240,60 @@ img.wp-smiley,
 	padding-right: 10px;
 }
 
+.blog-page {
+
+}
+
+.blog-page .blog-left { 
+	width: 368px;
+	min-height: 1290px;
+	background: url('images/blog_bg.png') top right no-repeat;
+}
+
+
+.blog-page .blog-content {
+	padding-left: 55px;
+}
+.blog-page .blog-content .blog-title {
+	background: #000; font-family: 'Arial W01 Narrow Bold';
+	text-transform: uppercase; color: #fff;
+	text-align: center; font-size: 23px;
+	font-weight: bold;
+	width: 255px; height: 34px; 
+}
+.blog-page .blog-content {
+	width: 700px; padding-bottom: 50px;
+}
+.blog-page .blog-content .post-container .post-title {
+	font-size: 40px;
+	font-weight: bold;
+	color: #4d8ec7;
+}
+.blog-page .blog-content .post-container .date-time {
+	font-size: 16px;
+}
+.blog-page .blog-content .post-container .text-note {
+	color: #d66e41;
+}
+.blog-page .blog-content .post-container {
+  min-height: 1123px;
+  font-size: 22px;
+  padding-top: 30px;
+}
+.blog-page .blog-content .post-line {
+	color: #4892d9; font-weight:bold;
+	font-size: 22px;
+	word-spacing:8px;letter-spacing:5px;
+	padding: 10px 0px;
+}
+
+.blog-page .the_nabar_footer {
+	margin-left: -54px;
+}
+
+
+
+
 
 
 /* duy tu*/
