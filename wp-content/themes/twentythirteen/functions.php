@@ -251,7 +251,7 @@ function twentythirteen_widgets_init() {
 		'name'          => __( 'Product list', 'twentythirteen' ),
 		'id'            => 'sidebar-3',
 		'description'   => __( 'Manual add product content on product page.', 'twentythirteen' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget product-item left">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<div class="product-title">',
 		'after_title'   => '</div>',
@@ -566,7 +566,7 @@ function get_upall_pages() {
 
 function is_main_banner() {
 	$pageid = $GLOBALS["pageid"];
-	if($pageid === 'home' || $pageid === 'contact' || $pageid === 'shop' || $pageid === 'causes') {
+	if($pageid === 'home' || $pageid === 'contact' || $pageid === 'shop' || $pageid === 'causes' || $pageid === 'product') {
 		return true;
 	}
 	return false;
