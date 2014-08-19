@@ -146,6 +146,7 @@
       var info = EffectContent.currentBlock.find('.info-hidden:first');
 			$('#post-img').attr('src', info.attr('data-img'));
 			$('#shop-now-button').attr('href', info.attr('data-link'));
+			$('#post-excerpt').text(EffectContent.currentBlock.find('.content-hidden').text());
     }
   };
 
@@ -171,20 +172,20 @@
 		}
 	}
 	
-	function controllBg(clazz) {
+	function controllBg(clazz, d) {
 		//
 		var pr = $('.' + clazz);	
 		if(pr.length > 0) {
 			var bg = pr.find(' > .control-backgound');
 			var h = bg.find('.control-footer:first').height();
-			var top = bg.height() - h - 1;
+			var top = bg.height() - h - d;
 			bg.attr("style", "background: url('" + window.template_uri + "/images/bg_fff.png') repeat-x;").css({'background-position' : ('0px ' + top + 'px')});
 		}
 		
 	}
 
 
-  function init(){
+  function init() {
     if(window.isInit !== 'start') {
 			window.isInit = 'start';
 			window.EffectContent = new effectContent();
@@ -194,9 +195,15 @@
 			//
 			lifeOver();
 			//
-			controllBg('body-contact');
-			controllBg('body-causes');
+			var t = setTimeout(function(){
+				controllBg('body-contact', 1);
+				controllBg('body-causes', 1);
+				controllBg('body-product', 0);
+				window.clearTimeout(t);
+			}, 200);
     }
+    
+    $('.wpcf7-submit').on('mouseup', function() { setTimeout(function(){controllBg('body-contact', 1);}, 500);})
   }
 
 window.sliderInit = init;

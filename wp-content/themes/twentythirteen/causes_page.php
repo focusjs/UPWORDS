@@ -62,10 +62,10 @@
 		<div class="copyright myriad-pro-regular left"> Copyright © 2014 UPwords. All Rights Reserved. All prices USD.</div>
 		<div class="social right">
 			<div class="social-full">
-				<a class="twitter" href="#"></a>
-				<a class="facebook" href="#"></a>
-				<a class="linkin" href="#"></a>
-				<a class="youtube" href="#"></a>
+				<a class="twitter" target="_blank" href="https://twitter.com/allupwords"></a>
+				<a class="facebook" target="_blank" href="https://www.facebook.com/pages/UPwords-LLC/424754280988379?hc_location=stream"></a>
+				<a class="linkin" target="_blank" href="http://www.linkedin.com/in/weaversydney"></a>
+				<a class="youtube" target="_blank" href="#"></a>
 			</div>
 		</div>
 	</div>

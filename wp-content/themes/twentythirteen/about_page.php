@@ -32,9 +32,9 @@
 			
 			<div class="social clear">
 				<div class="social-network right">
-					<a class="twitter" href="#"></a>
-					<a class="facebook" href="#"></a>
-					<a class="youtube" href="#"></a>
+					<a class="twitter" target="_blank" href="https://twitter.com/allupwords"></a>
+					<a class="facebook" target="_blank" href="https://www.facebook.com/pages/UPwords-LLC/424754280988379?hc_location=stream"></a>
+					<a class="youtube" target="_blank" href="#"></a>
 				</div>
 			</div>
 			<div class="the_nabar_footer">

@@ -9,7 +9,7 @@
 			<div class="post-container">
 				<?php
 				  $in_cats = "blog";
-					$strQuery = array( 'posts_per_page' => 10, 'category_name' => $in_cats, 'orderby' => 'date', 'order' => 'ASC');
+					$strQuery = array( 'posts_per_page' => 20, 'category_name' => $in_cats, 'orderby' => 'date', 'order' => 'ASC');
 					$the_query = new WP_Query( $strQuery );
 					$index = 0;
 					$post_count = $the_query->post_count;
@@ -17,11 +17,11 @@
 						$the_query->the_post();
 						$the_ID = get_the_ID();
 				?>
-				<div class="post-<?php echo $the_ID;?>" >
+				<div class="post-<?php echo $the_ID;?>" ><a name="post-<?php echo $the_ID;?>"></a>
 					<div class="date-time myriad-pro-regular">	<?php  echo get_the_date(); ?></div>
 					<div class="post-title myriad-pro-semibold"><?php the_title(); ?> </div>
 					<div class="post-content myriad-pro-regular"><?php $content= trim(get_the_content()); echo $content; ?></div>
-					<div class="text-note myriad-pro-semibold"><?php $text = get_the_excerpt(); if($text == '') {$text = '"Be the UP in someone\'s life today!"';} echo $text; ?></div>
+					<div class="text-note myriad-pro-semibold"><?php $text = get_post_field('signature', $the_ID); if($text == '') {$text = '"Be the UP in someone\'s life today!"';} echo $text; ?></div>
 					<div class="entry-meta">
 						<?php edit_post_link( __( 'Edit', 'twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-meta -->
@@ -40,9 +40,9 @@
 		
 		<div class="social clear">
 			<div class="social-network right">
-				<a class="twitter" href="#"></a>
-				<a class="facebook" href="#"></a>
-				<a class="youtube" href="#"></a>
+				<a class="twitter" target="_blank" href="https://twitter.com/allupwords"></a>
+				<a class="facebook" target="_blank" href="https://www.facebook.com/pages/UPwords-LLC/424754280988379?hc_location=stream"></a>
+				<a class="youtube" target="_blank" href="#"></a>
 			</div>
 		</div>
 		<div class="the_nabar_footer">

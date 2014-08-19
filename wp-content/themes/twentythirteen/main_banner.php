@@ -2,9 +2,30 @@
 			<div id="top-navbar" class="top-navbar clear">
 				<div class="right-navbar right clear">
 					<ul class="navbar-item left">
-						<li><a href="#"> Log In </a>
+						<?php
+						  $pg = $GLOBALS["pageid"]; if ($pg === 'home') {$pg = '';} else {$pg .= '/';}
+							$redirect_to = esc_url( home_url( '/'.$pg) );
+							$redirect_to = str_replace(':', '%3A', $redirect_to );
+							$redirect_to = str_replace('/', '%2F', $redirect_to );
+							$login = esc_url( home_url( '/wp-login.php') );
+							
+							$text = "Log In";
+							if ( is_user_logged_in() ) {
+								$text = "Log Out";
+								$login .= '?action=logout&';
+							} else {
+								$login .= '?';
+							}
+							$login .= 'redirect_to='.$redirect_to;
+							$link = '<a href="'. $login .'">'. $text .'</a>';
+						?>
+						
+						
+						<li><?php echo $link; ?>
 						<li>|</li><li><a href="<?php echo esc_url( home_url( '/' ) ); ?>product/">  View Cart  </a>
-						<li>|</li><li><a href="#">  Check Out </a>
+						<?php if (! is_user_logged_in() ) { ?>
+						<li>|</li><li><a href="<?php echo esc_url( home_url( '/wp-login.php') ).'?action=register';?>">  Check Out </a>
+						<?php } ?>
 						<li>|</li><li><a href="#">  Shipping</a>
 					</ul>
 					<div class="search left"><?php get_search_form(); ?></div>

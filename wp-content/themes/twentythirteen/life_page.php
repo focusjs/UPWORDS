@@ -20,7 +20,7 @@
 			?>
 			<p class="the-title myriad-pro-bold"><?php echo $post_74->post_title; ?></p>
 			<p class="the-excerpt myriad-pro-regular"><?php echo $post_74->post_content;?></p>
-			<div class="post-container clear">
+			<div class="post-life-container clear">
 				<?php
 				  $in_cats = "life";
 					$strQuery = array( 'posts_per_page' => 10, 'category_name' => $in_cats, 'post__not_in' => array(74), 'orderby' => 'date', 'order' => 'ASC');
@@ -51,9 +51,9 @@
 			<p></p>
 			<div class="social clear">
 				<div class="social-network right">
-					<a class="twitter" href="#"></a>
-					<a class="facebook" href="#"></a>
-					<a class="youtube" href="#"></a>
+					<a class="twitter" target="_blank" href="https://twitter.com/allupwords"></a>
+					<a class="facebook" target="_blank" href="https://www.facebook.com/pages/UPwords-LLC/424754280988379?hc_location=stream"></a>
+					<a class="youtube" target="_blank" href="#"></a>
 				</div>
 			</div>
 			<div class="the_nabar_footer">

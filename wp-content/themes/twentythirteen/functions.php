@@ -668,12 +668,26 @@ function get_sub_categories_by_slug($page_slug) {
 function get_text_banner($pageid = 'home') {
 	$text_html = "";$text="";$img=""; 
 	if($pageid == 'home') {
-		$text = "\"This quote will convey the emotional<br/>value that these cards have brought to<br/>someone's life and how the message was<br/>so incredible and meaningful.\"<br/><span>Sonya Edison / Northridge, WI</span>";
+		$text = "\"This quote will convey the emotional<br/>value that these cards have brought to<br/>someone's life and how the message was<br/>so incredible and meaningful.\"<br/><i>Sonya Edison / Northridge, WI</i>";
 		$img = get_template_directory_uri() . "/images/Mom_Girl.jpg";
 	}
-	
-	$text_html .= '<div class="text-logo left">'.$text . '</div>';
-	$text_html .= '<div class="img-logo left"><img src="'.$img . '" width="284px" height="153px"/></div>';
+	if($pageid == 'contact') {
+		$text = "\"Life is not meant to <br/>be lived alone\"";
+		$img = get_template_directory_uri() . "/images/girl_group.jpg";
+	}
+	if($pageid == 'causes') {
+		$text = "\"Those who are happiest are those<br/>who do the most for others.\"<br/><i>Booker T. Washington</i>";
+	}
+	if($pageid == 'product') {
+		$text = "\"Greeting cards are effective tools<br/>to communicate important feelings.\"<br/><i style=\"font-size:12px\">John Beeder, Former President of the Greeting Card Asociation</i>";
+		$img = get_template_directory_uri() . "/images/love_banner.jpg";
+	}
+	if($text !== "") {
+		$text_html .= '<div class="text-logo left"><span>'.$text . '</span></div>';
+	}
+	if($img !== "") {
+		$text_html .= '<div class="img-logo left"><img src="'.$img . '" height="153px"/></div>';
+	}
 	//
   echo $text_html ;
 }

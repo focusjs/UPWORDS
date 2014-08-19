@@ -46,7 +46,7 @@
 					<div id="info-hidden-<?php echo $idActive;?>" 
 					    data-link="<?php echo get_permalink();?>"
 							data-img="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $the_ID ), 'large' )[0];?>" class="info-hidden" style="display:none"></div>
-					<div id="content-hidden-<?php echo $idActive;?>" style="display:none"></div>
+					<div class="content-hidden" id="content-hidden-<?php echo $idActive;?>" style="display:none"><?php the_excerpt(); ?></div>
 				</li>
 				<?php
 					 $index = $index + 1;
@@ -61,7 +61,7 @@
 				var info = jQuery('#info-hidden-<?php echo $idActive;?>');
 				jQuery('#post-img').attr('src', info.attr('data-img'));
 				jQuery('#shop-now-button').attr('href', info.attr('data-link'));
-				jQuery('#post-excerptn').text(jQuery('#content-hidden-<?php echo $idActive;?>').text());
+				jQuery('#post-excerpt').text(jQuery('#content-hidden-<?php echo $idActive;?>').text());
 			</script>
 			
 		</div>
@@ -123,9 +123,9 @@
 				 <br/><span><strong>Tell stories that matter.</strong></span>
 			</p>
 			<div class="social-network">
-				<a class="twitter" href="#"></a>
-				<a class="facebook" href="#"></a>
-				<a class="youtube" href="#"></a>
+				<a class="twitter" target="_blank" href="https://twitter.com/allupwords"></a>
+				<a class="facebook" target="_blank" href="https://www.facebook.com/pages/UPwords-LLC/424754280988379?hc_location=stream"></a>
+				<a class="youtube" target="_blank" href="#"></a>
 			</div>
 		</div>
 	</div>
