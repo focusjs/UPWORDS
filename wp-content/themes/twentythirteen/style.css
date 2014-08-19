@@ -591,15 +591,15 @@ button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
-	background: #e05d22; /* Old browsers */
-	background: -webkit-linear-gradient(top, #e05d22 0%, #d94412 100%); /* Chrome 10+, Safari 5.1+ */
-	background:   linear-gradient(to bottom, #e05d22 0%, #d94412 100%); /* W3C */
+	background: #f26722; /* Old browsers */
+	background: -webkit-linear-gradient(top, #f26722 0%, #e05d22 100%); /* Chrome 10+, Safari 5.1+ */
+	background:   linear-gradient(to bottom, #f26722 0%, #e05d22 100%); /* W3C */
 	border: none;
 	border-bottom: 3px solid #b93207;
 	border-radius: 2px;
 	color: #fff;
 	display: inline-block;
-	padding: 11px 24px 10px;
+	padding: 8px 24px 7px;
 	text-decoration: none;
 }
 
@@ -1154,10 +1154,13 @@ img.wp-smiley,
 	color: #595a58;font-size: 26px;line-height: 26px;
 }
 
-.footer-home .footer-right .footer-logo {
+.footer-logo {
 	width: 300px; height: 300px;
-	margin: 10px 0px 0px 30px;
 	background: url('images/up_logo_footer.png') center no-repeat;
+}
+
+.footer-home .footer-right .footer-logo {
+	margin: 10px 0px 0px 30px;
 }
 
 .footer-home .social-network {
@@ -1396,15 +1399,17 @@ img.wp-smiley,
 	padding: 0px;margin: 0px;
 }
 
+.main-template .page-title{
+	font-weight:bold;
+	color: #f26722;
+	font-style: normal;
+	font-family: 'Arial W01 Narrow';
+	padding: 40px 0px 30px 0px;
+}
 
 .causes-page {
 	padding-left: 50px;
 	background: #fff url('images/top_left_home.png') top left repeat-x;
-}
-.causes-page .page-title{
-	font-weight:bold;
-	color: #f26722;
-	font-style: normal;
 }
 
 .causes-page .post-info {
@@ -1509,8 +1514,6 @@ img.wp-smiley,
 	display: none;
 }
 
-
-
 .social-full {
 	width: 170px;height: 38px;
 	background: url('images/full_social.png') top left no-repeat;
@@ -1520,9 +1523,49 @@ img.wp-smiley,
 	display: inline-block;
 }
 
+.contact-page {
+	padding: 30px 0px 30px 50px;
+	background: #fff url('images/top_left_home.png') top left repeat-x;
+}
+.contact-page label {
+	font-family: 'Arial W01 Narrow';
+	font-weight:bold;
+}
 
+.contact-page .row {
+	padding-top: 10px;
+}
 
+.contact-page .form-left{
+	width: 480px;
+}
 
+.contact-page .form-left input {
+	width: 430px; border: none;
+	background: #e1e1e1;
+	border-radius: 2px;
+}
+
+.contact-page .form-right textarea {
+	width: 445px; height: 284px;
+	border: none;
+	background: #e1e1e1;
+	border-radius: 6px;
+}
+
+.contact-page .form-right .sm {
+	padding: 10px 0px 0px 0px;
+	font-family: 'Arial W01 Narrow';
+	font-weight:bold;
+}
+.contact-page .form-right .sm input {
+	font-family: 'Arial W01 Narrow';
+	font-weight:bold;
+}
+
+.contact-page .footer-logo {
+	margin: -30px 0px 0px 60px;
+}
 
 
 

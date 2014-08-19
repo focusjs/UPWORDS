@@ -16,6 +16,7 @@
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
+</div><!-- .control-backgound -->
 	<script type="text/javascript">
 		if(window.sliderInit) {window.sliderInit()};
 	</script>

@@ -494,6 +494,7 @@ function twentythirteen_body_class( $classes ) {
 	if ( ! get_option( 'show_avatars' ) )
 		$classes[] = 'no-avatars';
 
+	$classes[] = 'body-'.$GLOBALS["pageid"];
 	return $classes;
 }
 add_filter( 'body_class', 'twentythirteen_body_class' );

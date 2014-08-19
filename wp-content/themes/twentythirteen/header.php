@@ -42,7 +42,10 @@
 		Cufon.replace('.myriad-pro-bold-italic', { fontFamily: 'Myriad Pro Bold Italic', hover: true }); 
 		Cufon.replace('.myriad-pro-bold-condensed-italic', { fontFamily: 'Myriad Pro Bold Condensed Italic', hover: true }); 
 		Cufon.replace('.myriad-pro-bold-condensed', { fontFamily: 'Myriad Pro Bold Condensed', hover: true }); 
-		Cufon.replace('.myriad-pro-bold', { fontFamily: 'Myriad Pro Bold', hover: true }); 
+		Cufon.replace('.myriad-pro-bold', { fontFamily: 'Myriad Pro Bold', hover: true });
+		//
+		window.template_uri = '<?php echo get_template_directory_uri(); ?>';
+		window.site_uri = '<?php echo get_site_url();?>';
 	</script>
 </head>
 <?php 
@@ -51,7 +54,8 @@ $bodyId = ($main_banner  === true) ? 'main-body' : 'sub-body';
 
 ?>
 <body id="<?php echo $bodyId; ?>" <?php body_class(); ?>>
+<div class="control-backgound">
 	<div id="page" class="hfeed site page-body">
 		<?php get_banner(); ?>
 		
-		<div id="main" class="site-main">
+		<div id="main" class="site-main main-template">
