@@ -2,10 +2,10 @@
 			<div id="top-navbar" class="top-navbar clear">
 				<div class="right-navbar right clear">
 					<ul class="navbar-item left">
-						<li><a href=""> Log In </a>
-						<li>|</li><li><a href="">  View Cart  </a>
-						<li>|</li><li><a href="">  Check Out </a>
-						<li>|</li><li><a href="">  Shipping</a>
+						<li><a href="#"> Log In </a>
+						<li>|</li><li><a href="<?php echo esc_url( home_url( '/' ) ); ?>product/">  View Cart  </a>
+						<li>|</li><li><a href="#">  Check Out </a>
+						<li>|</li><li><a href="#">  Shipping</a>
 					</ul>
 					<div class="search left"><?php get_search_form(); ?></div>
 				</div>

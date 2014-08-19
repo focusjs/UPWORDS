@@ -155,3 +155,46 @@
 .genericon-rightarrow:before {     content: '\f501'; }
 .genericon-downarrow:before {      content: '\f502'; }
 .genericon-leftarrow:before {      content: '\f503'; }
+
+
+
+@font-face {
+	font-family: 'MyriadProSemibold';
+	src: url('MYRIADPRO-SEMIBOLD.OTF') format('otf');
+}
+
+
+@font-face {
+	font-family: 'MyriadProBoldCond';
+	src: url('MYRIADPRO-BOLDCOND.OTF') format('otf');
+}
+
+@font-face {
+	font-family: 'ArialNarrow';
+	src: local('ArialNarrow'), url('601.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'ArialNarrowBold';
+	font-weight: bold;
+	src: local('ArialNarrowBold'), url('779.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'ArialNarrowSemibold';
+	src: local('ArialNarrowSemibold'), url('780.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'ArialNarrowSemi';
+	src: local('ArialNarrowSemi'), url('781.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'AGaramondProSemibold';font-weight: bold;
+	src: local('AGaramondProSemibold'), url('AGaramondPro-Semibold1.otf') format('otf'), url('AGaramondPro-Semibold.otf') format('otf');;
+}
+
+@font-face {
+font-family: 'AGaramondProRegular';
+font-style: normal;
+font-weight: normal;
+src: local('AGaramondProRegular'), url('AGaramondPro-Regular.otf') format('otf'), url('AGaramondPro-Regular.woff') format('woff');
+}

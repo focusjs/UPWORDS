@@ -246,6 +246,16 @@ function twentythirteen_widgets_init() {
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
+	
+	register_sidebar( array(
+		'name'          => __( 'Product list', 'twentythirteen' ),
+		'id'            => 'sidebar-3',
+		'description'   => __( 'Manual add product content on product page.', 'twentythirteen' ),
+		'before_widget' => '<aside id="%1$s" class="widget product-item left">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<div class="product-title">',
+		'after_title'   => '</div>',
+	) );
 }
 add_action( 'widgets_init', 'twentythirteen_widgets_init' );
 
@@ -556,7 +566,7 @@ function get_upall_pages() {
 
 function is_main_banner() {
 	$pageid = $GLOBALS["pageid"];
-	if($pageid === 'home' || $pageid === 'contact' || $pageid === 'shop' || $pageid === 'causes') {
+	if($pageid === 'home' || $pageid === 'contact' || $pageid === 'shop' || $pageid === 'causes' || $pageid === 'product') {
 		return true;
 	}
 	return false;
@@ -631,10 +641,10 @@ function get_contact_page() {
 		}
 }
 
-function get_viewcart_page() {
+function get_product_page() {
 		// Check if the template file exists
-		if(file_exists(TEMPLATEPATH . '/viewcart_page.php')){ 
-				include(TEMPLATEPATH . '/viewcart_page.php');
+		if(file_exists(TEMPLATEPATH . '/product_page.php')){ 
+				include(TEMPLATEPATH . '/product_page.php');
 		}
 }
 
@@ -668,7 +678,7 @@ function get_text_banner($pageid = 'home') {
 }
 
 
-
+add_filter('widget_text', 'do_shortcode');
 
 
 
