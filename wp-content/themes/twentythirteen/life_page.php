@@ -4,13 +4,14 @@
 
 <div class="life-page" id="life-page">
 	<div class="the_world">
-		<div class="note note1"><div class="text">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div>
-		<div class="note note2"><div class="text">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div>
-		<div class="note note3"><div class="text">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div>
-		<div class="note note4"><div class="text">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div>
-		<div class="note note5"><div class="text">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div>
-		<div class="note note6"><div class="text">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div>
-		<div class="note note7"><div class="text">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div>
+		<div class="top-text"><span>WORLDWIDE WE'VE</span><br/><span>TOUCHED PEOPLE'S LIVES</span></div>
+		<div class="note note1"><div class="text"><div class="text1">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div></div>
+		<div class="note note2"><div class="text"><div class="text1">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div></div>
+		<div class="note note3"><div class="text"><div class="text1">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div></div>
+		<div class="note note4"><div class="text"><div class="text1">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div></div>
+		<div class="note note5"><div class="text"><div class="text1">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div></div>
+		<div class="note note6"><div class="text"><div class="text1">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div></div>
+		<div class="note note7"><div class="text"><div class="text1">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div></div>
 	</div>
 	<div class="clear">
 		<div class="life-left left"></div>
