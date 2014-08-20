@@ -31,10 +31,10 @@
 			<div class="the-content"><?php echo $post_57->post_content; ?></div>
 			
 			<div class="social clear">
-				<div class="social-network right">
+				<div class="social-network2 right">
 					<a class="twitter" target="_blank" href="https://twitter.com/allupwords"></a>
 					<a class="facebook" target="_blank" href="https://www.facebook.com/pages/UPwords-LLC/424754280988379?hc_location=stream"></a>
-					<a class="youtube" target="_blank" href="#"></a>
+					<a class="linkin" target="_blank" href="http://www.linkedin.com/in/weaversydney"></a>
 				</div>
 			</div>
 			<div class="the_nabar_footer">

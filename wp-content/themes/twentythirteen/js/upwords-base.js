@@ -154,7 +154,7 @@
 	function lifeOver() {
 		var parent = $('#life-page');
 		if(parent.length > 0) {
-			var postContainer = parent.find('.post-container:first');
+			var postContainer = parent.find('.post-life-container:first');
 			var posts = postContainer.find('.post');
 			posts.on('mouseover', function(evt) {
 				var post = $(this);
