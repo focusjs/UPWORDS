@@ -1194,7 +1194,7 @@ img.wp-smiley,
 .social-network2 {
 	width: 135px;height:44px;
 	background: url('images/social_icon_2.png') top left no-repeat;
-	margin: 70px 10px 20px 0px;
+	margin: 30px 10px 20px 0px;
 }
 
 .about-page {
@@ -1642,15 +1642,12 @@ img.wp-smiley,
 	font-family: 'Arial W01 Narrow Bold';
 }
 
-
-
-
 .social-full {
-	width: 170px;height: 38px;
+	width: 180px;height: 38px;
 	background: url('images/full_social.png') top left no-repeat;
 }
 .social-full a {
-	width: 42.5px;height: 38px;
+	width: 40px;height: 38px;
 	display: inline-block;
 }
 
