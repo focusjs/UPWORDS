@@ -4,6 +4,7 @@
 
 <div class="life-page" id="life-page">
 	<div class="the_world">
+		<img src="http://localhost/upwork/wp-content/themes/twentythirteen/images/World_Life_Stories2.png" width="100%" style="width: 100%"/>
 		<div class="top-text"><span>WORLDWIDE WE'VE</span><br/><span>TOUCHED PEOPLE'S LIVES</span></div>
 		<div class="note note1"><div class="text"><div class="text1">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div></div>
 		<div class="note note2"><div class="text"><div class="text1">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div></div>
