@@ -43,9 +43,12 @@
 							<img src="<?php echo get_post_field('img_url', $the_ID); ?>" alt="<?php the_title(); ?>" width="688px" height="570px">
 						</a>
 					</div>
+                    <?php 
+                        $arrimg = wp_get_attachment_image_src( get_post_thumbnail_id( $the_ID ), 'large');
+                    ?>
 					<div id="info-hidden-<?php echo $idActive;?>" 
 					    data-link="<?php echo get_permalink();?>"
-							data-img="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $the_ID ), 'large' )[0];?>" class="info-hidden" style="display:none"></div>
+							data-img="<?php echo $arrimg[0];?>" class="info-hidden" style="display:none"></div>
 					<div class="content-hidden" id="content-hidden-<?php echo $idActive;?>" style="display:none"><?php the_excerpt(); ?></div>
 				</li>
 				<?php
@@ -130,5 +133,4 @@
 		</div>
 	</div>
 </div>
-
 

@@ -4,7 +4,7 @@
 
 <div class="life-page" id="life-page">
 	<div class="the_world">
-		<img src="http://localhost/upwork/wp-content/themes/twentythirteen/images/World_Life_Stories2.png" width="100%" style="width: 100%"/>
+		<img src="<?php echo get_site_url();?>/wp-content/themes/twentythirteen/images/World_Life_Stories2.png" width="100%" style="width: 100%"/>
 		<div class="top-text"><span>WORLDWIDE WE'VE</span><br/><span>TOUCHED PEOPLE'S LIVES</span></div>
 		<div class="note note1"><div class="text"><div class="text1">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div></div>
 		<div class="note note2"><div class="text"><div class="text1">"Live & Love across the world"</div><div class="text2">MARK DAVIS, Phoenix, AR</div></div></div>
@@ -34,8 +34,11 @@
 						$the_ID = get_the_ID();
 				?>
 					<div class="post left" id="post-<?php echo $the_ID;?>" data-index="<?php echo $index;?>">
-						<?php  if($index !== 4) { ?>
-						<img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $the_ID ), 'large' )[0];?>" width="215px" height="215px"/>
+						<?php  if($index !== 4) { 
+                            $arr_img = wp_get_attachment_image_src( get_post_thumbnail_id( $the_ID ), 'large' );
+                            
+                        ?>
+						<img src="<?php echo $arr_img[0];?>" width="215px" height="215px"/>
 						<div class="hidden-text myriad-pro-regular clear"><?php the_content(); ?>
 							<div class="title-text right myriad-pro-bold"><?php the_title(); ?></div>
 						</div>

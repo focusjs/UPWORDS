@@ -21,7 +21,7 @@
 					<div class="content-text myriad-pro-regular"><?php the_content(); ?></div>
 				</div>
 				<div class="post-image left">
-					<img src="<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( $the_ID ), 'large' )[0];?>" width="215px" height="215px"/>
+					<img src="<?php $arr_img = wp_get_attachment_image_src( get_post_thumbnail_id( $the_ID ), 'large' ); echo $arr_img[0];?>" width="215px" height="215px"/>
 				</div>
 			</div>
 		<?php
